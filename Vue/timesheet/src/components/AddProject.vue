@@ -30,14 +30,11 @@
         </table>
       </b-col>
     </b-row>
+    <br>
+    <br>
     <b-button v-b-modal.modal-1>Add Project</b-button>
-<br>
-<br>
-<b-modal id="modal-1" title="BootstrapVue">
+<b-modal id="modal-1" title="Create Team" >
   <form @submit.prevent="createAddProject">
-              <b-form-group label="DATE">
-                <b-form-input  type="date" class="form-control" v-model="Date"></b-form-input>
-              </b-form-group>
             <b-form-group label="Project">
               <b-form-input type="text" v-model="model.project"></b-form-input>
             </b-form-group>

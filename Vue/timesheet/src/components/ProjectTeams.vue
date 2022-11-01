@@ -31,34 +31,29 @@
             </tbody>
           </table>
         </b-col>
-        <b-col lg="3"> <b-col align="left">
-          <b-dropdown id="dropdown-form-offset" offset="180" text="Make Team" ref="dropdown" class="px-4 py-4" style="color: 28c69f">
-          <b-card :title="(model.id ? 'Manage Teams ID#' + model.id : 'Create Team')" >
-            <form @submit.prevent="createFoodRecord">
-              <b-form-group label="Project ID" style="color: #28c69f">
-                <b-form-input type="text" v-model="model.project"></b-form-input>
-              </b-form-group>
-              <b-form-group label="Member Name" style="color: #28c69f">
-                <b-form-input type="text" v-model="model.member"></b-form-input>
-              </b-form-group>
-              <b-form-group label="Membership Starts" style="color: #28c69f">
-                <b-form-input rows="4" v-model="model.start" type="datetime-local"></b-form-input>
-              </b-form-group>
-              <b-form-group label="Membership Ends" style="color: #28c69f">
-                <b-form-input rows="4" v-model="model.end" type="date"></b-form-input>
-              </b-form-group>
-              <b-form-group label="DATE">
-                <b-form-input  type="date" class="form-control" v-model="Date"></b-form-input>
-              </b-form-group>
-              <div>
-                <b-btn type="submit" variant="success">Save Record</b-btn>
-              </div>
-            </form>
-          </b-card>
-          </b-dropdown>
-          </b-col>
-        </b-col>
       </b-row>
+      <br>
+      <br>
+      <b-button v-b-modal.modal-1>Add Project</b-button>
+<b-modal id="modal-1" title="Create Team" >
+  <form @submit.prevent="createAddProject">
+            <b-form-group label="Project">
+              <b-form-input type="text" v-model="model.project"></b-form-input>
+            </b-form-group>
+            <b-form-group label="Project Coordinator">
+              <b-form-input v-model="model.coordinator" type="text"></b-form-input>
+            </b-form-group>
+            <b-form-group label="Start Date">
+              <b-form-input rows="4" v-model="model.start" type="datetime-local"></b-form-input>
+            </b-form-group>
+            <b-form-group label="End Date">
+              <b-form-input rows="4" v-model="model.end" type="datetime-local"></b-form-input>
+            </b-form-group>
+            <div>
+              <b-btn type="submit" variant="success">Save Record</b-btn>
+            </div>
+          </form>
+</b-modal>
     </div>
   </template>
   
