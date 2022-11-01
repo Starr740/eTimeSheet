@@ -29,11 +29,15 @@
           </tbody>
         </table>
       </b-col>
- 
-      <b-col lg="3"><b-col align="left">
-        <b-dropdown id="dropdown-form-offset" offset="180" text="Add Project" ref="dropdown" class="px-4 py-4">
-        <b-card :title="(model.id ? 'Edit Project ID#' + model.id : 'New Project')">
-          <form @submit.prevent="createAddProject">
+    </b-row>
+    <b-button v-b-modal.modal-1>Add Project</b-button>
+<br>
+<br>
+<b-modal id="modal-1" title="BootstrapVue">
+  <form @submit.prevent="createAddProject">
+              <b-form-group label="DATE">
+                <b-form-input  type="date" class="form-control" v-model="Date"></b-form-input>
+              </b-form-group>
             <b-form-group label="Project">
               <b-form-input type="text" v-model="model.project"></b-form-input>
             </b-form-group>
@@ -50,11 +54,7 @@
               <b-btn type="submit" variant="success">Save Record</b-btn>
             </div>
           </form>
-        </b-card>
-      </b-dropdown>
-      </b-col>
-      </b-col>
-    </b-row>
+</b-modal>
   </div>
 </template>
 
