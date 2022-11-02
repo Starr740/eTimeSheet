@@ -42,7 +42,7 @@
               <b-form-input v-model="model.coordinator" type="text"></b-form-input>
             </b-form-group>
             <b-form-group label="Start Date">
-              <b-form-input rows="4" v-model="model.start" type="datetime-local"></b-form-input>
+              <b-form-input rows="4" v-model="model.start" type="date"></b-form-input>
             </b-form-group>
             <b-form-group label="End Date">
               <b-form-input rows="4" v-model="model.end" type="date"></b-form-input>

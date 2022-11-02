@@ -23,16 +23,16 @@ namespace aspnetcore.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Coordinator")
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime>("End")
+                    b.Property<DateTime>("EndDate")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Project")
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime>("Start")
+                    b.Property<string>("ProjectCoordinator")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("StartDate")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");

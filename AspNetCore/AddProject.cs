@@ -6,8 +6,9 @@ namespace AspNetCore
   public int Id { get; set; } 
   public string? Project { get; set; }
   public string? Coordinator { get; set; }
-  public DateTime Start { get; set; }
-   public DateTime End { get; set; }
+  public DateOnly Start { get; set; }
+   public DateOnly End { get; set; } 
+  
+} 
 
   }
-}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\etimesheet\\aspnetcore\\aspnetcore.csproj": {}
+    "C:\\eTimeSheet\\AspNetCore\\aspnetcore.csproj": {}
   },
   "projects": {
-    "C:\\etimesheet\\aspnetcore\\aspnetcore.csproj": {
+    "C:\\eTimeSheet\\AspNetCore\\aspnetcore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\etimesheet\\aspnetcore\\aspnetcore.csproj",
+        "projectUniqueName": "C:\\eTimeSheet\\AspNetCore\\aspnetcore.csproj",
         "projectName": "aspnetcore",
-        "projectPath": "C:\\etimesheet\\aspnetcore\\aspnetcore.csproj",
+        "projectPath": "C:\\eTimeSheet\\AspNetCore\\aspnetcore.csproj",
         "packagesPath": "C:\\Users\\Esther\\.nuget\\packages\\",
-        "outputPath": "C:\\etimesheet\\aspnetcore\\obj\\",
+        "outputPath": "C:\\eTimeSheet\\AspNetCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,10 +58,6 @@
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[6.0.10, )"
-            },
-            "Swashbuckle": {
-              "target": "Package",
-              "version": "[5.6.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
