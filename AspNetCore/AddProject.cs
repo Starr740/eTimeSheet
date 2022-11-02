@@ -1,6 +1,4 @@
-using System;
-using System.Text.Json;
-
+using System.Data;
 namespace AspNetCore
 {
   public class AddProject
@@ -9,7 +7,7 @@ namespace AspNetCore
   public string? Project { get; set; }
   public string? Coordinator { get; set; }
   public DateTime Start { get; set; }
-  public DateTime End { get; set; }
-  
+   public DateTime End { get; set; }
+
   }
 }

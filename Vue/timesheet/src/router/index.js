@@ -4,8 +4,17 @@ import Hello from '@/components/Hello'
 import AddProject from '@/components/AddProject'
 import ProjectTeams from '@/components/ProjectTeams'
 import Task from '@/components/Task'
+import VueDatePicker from '@mathieustan/vue-datepicker';
+import '@mathieustan/vue-datepicker/dist/vue-datepicker.min.css';
 
 Vue.use(Router)
+
+Vue.use(VueDatePicker);
+
+// Options: You can set lang by default
+Vue.use(VueDatePicker, {
+  lang: 'fr'
+});
 
 export default new Router({
   routes: [

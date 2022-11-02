@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\eTimeSheet\\AspNetCore\\aspnetcore.csproj": {}
+    "C:\\etimesheet\\aspnetcore\\aspnetcore.csproj": {}
   },
   "projects": {
-    "C:\\eTimeSheet\\AspNetCore\\aspnetcore.csproj": {
+    "C:\\etimesheet\\aspnetcore\\aspnetcore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\eTimeSheet\\AspNetCore\\aspnetcore.csproj",
+        "projectUniqueName": "C:\\etimesheet\\aspnetcore\\aspnetcore.csproj",
         "projectName": "aspnetcore",
-        "projectPath": "C:\\eTimeSheet\\AspNetCore\\aspnetcore.csproj",
+        "projectPath": "C:\\etimesheet\\aspnetcore\\aspnetcore.csproj",
         "packagesPath": "C:\\Users\\Esther\\.nuget\\packages\\",
-        "outputPath": "C:\\eTimeSheet\\AspNetCore\\obj\\",
+        "outputPath": "C:\\etimesheet\\aspnetcore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -59,9 +59,13 @@
               "target": "Package",
               "version": "[6.0.10, )"
             },
+            "Swashbuckle": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.0.10, )"
             }
           },
           "imports": [
