@@ -25,13 +25,23 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlite
 builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlite
 (builder.Configuration.GetConnectionString("TeamConnection")));
 
+builder.Services.AddSwaggerGen(options =>
+{
+    options.UseDateOnlyTimeOnlyStringConverters();
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddControllers(options => options.UseDateOnlyTimeOnlyStringConverters())
+    .AddJsonOptions(options => options.UseDateOnlyTimeOnlyStringConverters());
+
 var app = builder.Build();
+
+  // let's convert DateTime to DateOnly
+var end = DateOnly.FromDateTime;
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

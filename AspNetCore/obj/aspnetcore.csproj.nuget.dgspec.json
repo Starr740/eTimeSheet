@@ -45,6 +45,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "DateOnlyTimeOnly.AspNet": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "DateOnlyTimeOnly.AspNet.Swashbuckle": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.10, )"

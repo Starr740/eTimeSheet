@@ -53,3 +53,5 @@ C:\eTimeSheet\AspNetCore\bin\Debug\net6.0\runtimes\win-arm\native\e_sqlite3.dll
 C:\eTimeSheet\AspNetCore\bin\Debug\net6.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\eTimeSheet\AspNetCore\bin\Debug\net6.0\Humanizer.dll
 C:\eTimeSheet\AspNetCore\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\eTimeSheet\AspNetCore\bin\Debug\net6.0\DateOnlyTimeOnly.AspNet.dll
+C:\eTimeSheet\AspNetCore\bin\Debug\net6.0\DateOnlyTimeOnly.AspNet.Swashbuckle.dll
