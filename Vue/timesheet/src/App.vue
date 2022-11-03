@@ -13,7 +13,7 @@
         </b-collapse>
       </b-navbar>
     </header>
-    <h1> <img src="@/assets/logo.png" alt=""></h1>
+    <!-- <h1> <img src="@/assets/logo.png" alt=""></h1> -->
     <main>
       <router-view></router-view>
     </main> 

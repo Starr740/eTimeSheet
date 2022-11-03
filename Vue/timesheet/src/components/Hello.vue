@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
     <main>
+      <h1> <img src="@/assets/logo.png" alt=""></h1>
+      <p>Welcome to eTimesheet</p>
       <form>
       <div class="container-fluid mt-3">
         <center>
