@@ -23,7 +23,7 @@
               <td>{{ record.start }}</td>
               <td>{{ record.end }}</td>
               <td class="text-right">
-                  <b-link href="#/project-teams" ><b-icon icon="eye-fill"></b-icon>Review</b-link>
+                  <b-link record-id href="#/project-teams" ><b-icon icon="eye-fill"></b-icon>Review</b-link>
                 </td>
             </tr>
           </tbody>
@@ -33,7 +33,7 @@
     <br>
     <br>
     <b-button v-b-modal.modal-1>Add Project</b-button>
-<b-modal id="modal-1" title="Create Team" >
+<b-modal id="modal-1" title="Add Project" >
   <form @submit.prevent="createAddProject">
             <b-form-group label="Project">
               <b-form-input type="text" v-model="model.project"></b-form-input>
@@ -98,17 +98,6 @@
         // Fetch all records again to have latest data
         await this.getAll()
       },
-      async deleteAddProject(id) {
-        if (confirm('Are you sure you want to delete this record?')) {
-          // if we are editing a food record we deleted, remove it from the form
-          if (this.model.id === id) {
-            this.model = {}
-          }
-
-          await api.delete(id)
-          await this.getAll()
-        }
-      }
     }
   }
 </script>

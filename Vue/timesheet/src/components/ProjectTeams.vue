@@ -24,7 +24,7 @@
                 <td>{{ record.start }}</td>
                 <td>{{ record.end }}</td>
                 <td class="text-right">
-                <a href="#" @click.prevent="updateFoodRecord(record)"><b-icon icon="pencil-square"></b-icon>Edit</a> - 
+                <a href="#" @click.prevent="updateFoodRecord(record)" v-b-modal.modal-1><b-icon icon="pencil-square"></b-icon>Edit</a> - 
                 <a href="#" @click.prevent="deleteFoodRecord(record.id)"><b-icon icon="trash-fill"></b-icon>Delete</a>
               </td>
               </tr>
@@ -34,28 +34,25 @@
       </b-row>
       <br>
       <br>
-      <b-button v-b-modal.modal-1>Add Project</b-button>
-<b-modal id="modal-1" title="Create Team" >
-  <form @submit.prevent="createTeam">
-            <b-form-group label="Project">
-              <b-form-input type="text" v-model="model.project"></b-form-input>
-            </b-form-group>
-            <b-form-group label="Member">
-              <b-form-input type="text" v-model="model.member"></b-form-input>
-            </b-form-group>
-            <b-form-group label="Project Coordinator">
-              <b-form-input v-model="model.coordinator" type="text"></b-form-input>
-            </b-form-group>
-            <b-form-group label="Start Date">
-              <b-form-input rows="4" v-model="model.start" type="date"></b-form-input>
-            </b-form-group>
-            <b-form-group label="End Date">
-              <b-form-input rows="4" v-model="model.end" type="date"></b-form-input>
-            </b-form-group>
-            <div>
-              <b-btn type="submit" variant="success">Save Record</b-btn>
-            </div>
-          </form>
+      <b-button v-b-modal.modal-1>Add Member</b-button>
+<b-modal id="modal-1" title="Add member" >
+            <form @submit.prevent="createFoodRecord">
+              <b-form-group label="AddProjectId" style="color: #28c69f">
+                <b-form-input type="text" v-model="model.project"></b-form-input>
+              </b-form-group>
+              <b-form-group label="Member Name" style="color: #28c69f">
+                <b-form-input type="text" v-model="model.member"></b-form-input>
+              </b-form-group>
+              <b-form-group label="Membership Starts" style="color: #28c69f">
+                <b-form-input rows="4" v-model="model.start" type="date"></b-form-input>
+              </b-form-group>
+              <b-form-group label="Membership Ends" style="color: #28c69f">
+                <b-form-input rows="4" v-model="model.end" type="date"></b-form-input>
+              </b-form-group>
+              <div>
+                <b-btn type="submit" variant="success">Save Record</b-btn>
+              </div>
+            </form>
 </b-modal>
     </div>
   </template>

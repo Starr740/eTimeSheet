@@ -3,33 +3,35 @@ using System;
 using AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace aspnetcore.Migrations
+namespace aspnetcore.Migrations.Database
 {
-    [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(DatabaseContext))]
+    [Migration("20221107093743_Migrations")]
+    partial class Migrations
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.10");
 
-            modelBuilder.Entity("AspNetCore.AddProject", b =>
+            modelBuilder.Entity("AspNetCore.ProjectTeam", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Coordinator")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("AddProjectId")
+                        .HasColumnType("INTEGER");
 
                     b.Property<DateOnly>("End")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Project")
+                    b.Property<string>("Member")
                         .HasColumnType("TEXT");
 
                     b.Property<DateOnly>("Start")
@@ -37,7 +39,7 @@ namespace aspnetcore.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("AddProjects");
+                    b.ToTable("ProjectTeams");
                 });
 #pragma warning restore 612, 618
         }
