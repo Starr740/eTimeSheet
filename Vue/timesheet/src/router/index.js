@@ -4,8 +4,7 @@ import Hello from '@/components/Hello'
 import AddProject from '@/components/AddProject'
 import ProjectTeams from '@/components/ProjectTeams'
 import Task from '@/components/Task'
-import VueDatePicker from '@mathieustan/vue-datepicker';
-import '@mathieustan/vue-datepicker/dist/vue-datepicker.min.css';
+import TimeSheet from '@/components/TimeSheet'
 
 Vue.use(Router)
 
@@ -37,6 +36,11 @@ export default new Router({
       path: '/task',
       name: 'Task',
       component: Task,
+    },
+    {
+      path: '/timeSheet',
+      name: 'TimeSheet',
+      component: TimeSheet,
     }
   ]
 })

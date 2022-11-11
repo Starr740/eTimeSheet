@@ -8,7 +8,7 @@
           <b-navbar-nav>
             <b-nav-item to="/add-project">Add Project</b-nav-item>
             <b-nav-item to="/project-teams">Project Teams</b-nav-item>
-            <b-nav-item to="/task">Timesheet</b-nav-item>
+            <b-nav-item to="/time-sheet">Timesheet</b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>

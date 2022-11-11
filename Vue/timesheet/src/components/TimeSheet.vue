@@ -56,7 +56,7 @@
   </template>
   
   <script>
-    import api from '@/FoodRecordsApiService';
+    import api from '@/ProjectTeamsApiService';
   
     export default {
       data() {
