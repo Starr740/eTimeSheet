@@ -8,13 +8,6 @@ import TimeSheet from '@/components/TimeSheet'
 
 Vue.use(Router)
 
-Vue.use(VueDatePicker);
-
-// Options: You can set lang by default
-Vue.use(VueDatePicker, {
-  lang: 'fr'
-});
-
 export default new Router({
   routes: [
     {
